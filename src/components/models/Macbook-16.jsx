@@ -20,6 +20,8 @@ export default function MacbookModel16(props) {
 
   const {color} = useMacbookStore();
   const texture = useTexture('/screen.png');
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.needsUpdate = true;
 
   useEffect(() => {
     scene.traverse((child) => {
