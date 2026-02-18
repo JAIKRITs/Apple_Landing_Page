@@ -8,8 +8,7 @@ const Performance = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
     const sectionRef = useRef(null);
 
-    useGSAP(
-        () => {
+    useGSAP(() => {
             const sectionEl = sectionRef.current;
             if (!sectionEl) return;
 
